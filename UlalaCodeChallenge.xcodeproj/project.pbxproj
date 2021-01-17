@@ -3,18 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6352A9D025B4FDD200C59958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352A9CF25B4FDD200C59958 /* AppDelegate.swift */; };
 		6352A9D225B4FDD200C59958 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352A9D125B4FDD200C59958 /* SceneDelegate.swift */; };
-		6352A9D425B4FDD200C59958 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352A9D325B4FDD200C59958 /* ViewController.swift */; };
 		6352A9D725B4FDD200C59958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6352A9D525B4FDD200C59958 /* Main.storyboard */; };
 		6352A9D925B4FDD600C59958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6352A9D825B4FDD600C59958 /* Assets.xcassets */; };
 		6352A9DC25B4FDD600C59958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6352A9DA25B4FDD600C59958 /* LaunchScreen.storyboard */; };
 		6352A9E725B4FDD600C59958 /* UlalaCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352A9E625B4FDD600C59958 /* UlalaCodeChallengeTests.swift */; };
 		6352A9F225B4FDD600C59958 /* UlalaCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352A9F125B4FDD600C59958 /* UlalaCodeChallengeUITests.swift */; };
+		6352AA0725B4FE2200C59958 /* FeedReceipesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352AA0025B4FE2200C59958 /* FeedReceipesPresenter.swift */; };
+		6352AA0925B4FE2200C59958 /* FeedReceipesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352AA0225B4FE2200C59958 /* FeedReceipesRouter.swift */; };
+		6352AA0A25B4FE2200C59958 /* FeedReceipesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352AA0325B4FE2200C59958 /* FeedReceipesProtocols.swift */; };
+		6352AA0B25B4FE2200C59958 /* FeedReceipesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352AA0425B4FE2200C59958 /* FeedReceipesInteractor.swift */; };
+		6352AA0C25B4FE2200C59958 /* FeedReceipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352AA0525B4FE2200C59958 /* FeedReceipesView.swift */; };
+		6352AA1125B4FE9E00C59958 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352AA1025B4FE9E00C59958 /* NetworkManager.swift */; };
+		6352AA1325B5001E00C59958 /* Meals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352AA1225B5001E00C59958 /* Meals.swift */; };
+		703F1E7A562244CB99F0E8DE /* Pods_UlalaCodeChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA4A8232B8CDD1F62982B4C /* Pods_UlalaCodeChallengeTests.framework */; };
+		AEF4C8E5BE83944EA7AF2740 /* Pods_UlalaCodeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4A7B3F6660E179F097166A /* Pods_UlalaCodeChallenge.framework */; };
+		C4E54F11DE064A6233F117A6 /* Pods_UlalaCodeChallenge_UlalaCodeChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB12700238C426AE4FE3E9E /* Pods_UlalaCodeChallenge_UlalaCodeChallengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10BE8D657675372FA493200D /* Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests/Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F4A7B3F6660E179F097166A /* Pods_UlalaCodeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UlalaCodeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6352A9CC25B4FDD200C59958 /* UlalaCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UlalaCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6352A9CF25B4FDD200C59958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6352A9D125B4FDD200C59958 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6352A9D325B4FDD200C59958 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6352A9D625B4FDD200C59958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6352A9D825B4FDD600C59958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6352A9DB25B4FDD600C59958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,20 @@
 		6352A9ED25B4FDD600C59958 /* UlalaCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UlalaCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6352A9F125B4FDD600C59958 /* UlalaCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UlalaCodeChallengeUITests.swift; sourceTree = "<group>"; };
 		6352A9F325B4FDD600C59958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6352AA0025B4FE2200C59958 /* FeedReceipesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedReceipesPresenter.swift; sourceTree = "<group>"; };
+		6352AA0225B4FE2200C59958 /* FeedReceipesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedReceipesRouter.swift; sourceTree = "<group>"; };
+		6352AA0325B4FE2200C59958 /* FeedReceipesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedReceipesProtocols.swift; sourceTree = "<group>"; };
+		6352AA0425B4FE2200C59958 /* FeedReceipesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedReceipesInteractor.swift; sourceTree = "<group>"; };
+		6352AA0525B4FE2200C59958 /* FeedReceipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedReceipesView.swift; sourceTree = "<group>"; };
+		6352AA1025B4FE9E00C59958 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		6352AA1225B5001E00C59958 /* Meals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meals.swift; sourceTree = "<group>"; };
+		76D5692BF06A7527966A08B0 /* Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests/Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A37CB84D75B26122E12765AE /* Pods-UlalaCodeChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UlalaCodeChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-UlalaCodeChallengeTests/Pods-UlalaCodeChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4535A9779FE34032A892EA1 /* Pods-UlalaCodeChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UlalaCodeChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-UlalaCodeChallengeTests/Pods-UlalaCodeChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		BC8963A25A3C8F28F231406E /* Pods-UlalaCodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UlalaCodeChallenge.release.xcconfig"; path = "Target Support Files/Pods-UlalaCodeChallenge/Pods-UlalaCodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		CAA4A8232B8CDD1F62982B4C /* Pods_UlalaCodeChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UlalaCodeChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD294E9AC9B8D9963A577313 /* Pods-UlalaCodeChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UlalaCodeChallenge.debug.xcconfig"; path = "Target Support Files/Pods-UlalaCodeChallenge/Pods-UlalaCodeChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		FBB12700238C426AE4FE3E9E /* Pods_UlalaCodeChallenge_UlalaCodeChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UlalaCodeChallenge_UlalaCodeChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEF4C8E5BE83944EA7AF2740 /* Pods_UlalaCodeChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703F1E7A562244CB99F0E8DE /* Pods_UlalaCodeChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +96,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E54F11DE064A6233F117A6 /* Pods_UlalaCodeChallenge_UlalaCodeChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		126A876EBFA490DE765EDE52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD294E9AC9B8D9963A577313 /* Pods-UlalaCodeChallenge.debug.xcconfig */,
+				BC8963A25A3C8F28F231406E /* Pods-UlalaCodeChallenge.release.xcconfig */,
+				10BE8D657675372FA493200D /* Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests.debug.xcconfig */,
+				76D5692BF06A7527966A08B0 /* Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests.release.xcconfig */,
+				A37CB84D75B26122E12765AE /* Pods-UlalaCodeChallengeTests.debug.xcconfig */,
+				A4535A9779FE34032A892EA1 /* Pods-UlalaCodeChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		31E6207A9ED717E3158EA869 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F4A7B3F6660E179F097166A /* Pods_UlalaCodeChallenge.framework */,
+				FBB12700238C426AE4FE3E9E /* Pods_UlalaCodeChallenge_UlalaCodeChallengeUITests.framework */,
+				CAA4A8232B8CDD1F62982B4C /* Pods_UlalaCodeChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6352A9C325B4FDD200C59958 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +133,8 @@
 				6352A9E525B4FDD600C59958 /* UlalaCodeChallengeTests */,
 				6352A9F025B4FDD600C59958 /* UlalaCodeChallengeUITests */,
 				6352A9CD25B4FDD200C59958 /* Products */,
+				126A876EBFA490DE765EDE52 /* Pods */,
+				31E6207A9ED717E3158EA869 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +151,11 @@
 		6352A9CE25B4FDD200C59958 /* UlalaCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				6352AA0F25B4FE3200C59958 /* Network */,
+				6352AA0E25B4FE2700C59958 /* Models */,
+				6352A9FF25B4FDEF00C59958 /* FeedRecipes */,
 				6352A9CF25B4FDD200C59958 /* AppDelegate.swift */,
 				6352A9D125B4FDD200C59958 /* SceneDelegate.swift */,
-				6352A9D325B4FDD200C59958 /* ViewController.swift */,
 				6352A9D525B4FDD200C59958 /* Main.storyboard */,
 				6352A9D825B4FDD600C59958 /* Assets.xcassets */,
 				6352A9DA25B4FDD600C59958 /* LaunchScreen.storyboard */,
@@ -128,6 +182,34 @@
 			path = UlalaCodeChallengeUITests;
 			sourceTree = "<group>";
 		};
+		6352A9FF25B4FDEF00C59958 /* FeedRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				6352AA0025B4FE2200C59958 /* FeedReceipesPresenter.swift */,
+				6352AA0225B4FE2200C59958 /* FeedReceipesRouter.swift */,
+				6352AA0325B4FE2200C59958 /* FeedReceipesProtocols.swift */,
+				6352AA0425B4FE2200C59958 /* FeedReceipesInteractor.swift */,
+				6352AA0525B4FE2200C59958 /* FeedReceipesView.swift */,
+			);
+			path = FeedRecipes;
+			sourceTree = "<group>";
+		};
+		6352AA0E25B4FE2700C59958 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6352AA1225B5001E00C59958 /* Meals.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6352AA0F25B4FE3200C59958 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6352AA1025B4FE9E00C59958 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6352A9F625B4FDD600C59958 /* Build configuration list for PBXNativeTarget "UlalaCodeChallenge" */;
 			buildPhases = (
+				A768BFBD227FB6274B676ACB /* [CP] Check Pods Manifest.lock */,
 				6352A9C825B4FDD200C59958 /* Sources */,
 				6352A9C925B4FDD200C59958 /* Frameworks */,
 				6352A9CA25B4FDD200C59958 /* Resources */,
+				8174D3E7EAD3E1A0AA34EC3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +236,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6352A9F925B4FDD600C59958 /* Build configuration list for PBXNativeTarget "UlalaCodeChallengeTests" */;
 			buildPhases = (
+				34585AB1C0B09B4A1906765C /* [CP] Check Pods Manifest.lock */,
 				6352A9DE25B4FDD600C59958 /* Sources */,
 				6352A9DF25B4FDD600C59958 /* Frameworks */,
 				6352A9E025B4FDD600C59958 /* Resources */,
@@ -170,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6352A9FC25B4FDD600C59958 /* Build configuration list for PBXNativeTarget "UlalaCodeChallengeUITests" */;
 			buildPhases = (
+				F8DD8BD6A6991519C3D961ED /* [CP] Check Pods Manifest.lock */,
 				6352A9E925B4FDD600C59958 /* Sources */,
 				6352A9EA25B4FDD600C59958 /* Frameworks */,
 				6352A9EB25B4FDD600C59958 /* Resources */,
+				EE777140A4157A5DD85C3AF0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,13 +341,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34585AB1C0B09B4A1906765C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UlalaCodeChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8174D3E7EAD3E1A0AA34EC3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UlalaCodeChallenge/Pods-UlalaCodeChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UlalaCodeChallenge/Pods-UlalaCodeChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UlalaCodeChallenge/Pods-UlalaCodeChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A768BFBD227FB6274B676ACB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UlalaCodeChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE777140A4157A5DD85C3AF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests/Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests/Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests/Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8DD8BD6A6991519C3D961ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6352A9C825B4FDD200C59958 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6352A9D425B4FDD200C59958 /* ViewController.swift in Sources */,
+				6352AA1325B5001E00C59958 /* Meals.swift in Sources */,
+				6352AA0C25B4FE2200C59958 /* FeedReceipesView.swift in Sources */,
+				6352AA0925B4FE2200C59958 /* FeedReceipesRouter.swift in Sources */,
 				6352A9D025B4FDD200C59958 /* AppDelegate.swift in Sources */,
+				6352AA0A25B4FE2200C59958 /* FeedReceipesProtocols.swift in Sources */,
+				6352AA1125B4FE9E00C59958 /* NetworkManager.swift in Sources */,
+				6352AA0B25B4FE2200C59958 /* FeedReceipesInteractor.swift in Sources */,
+				6352AA0725B4FE2200C59958 /* FeedReceipesPresenter.swift in Sources */,
 				6352A9D225B4FDD200C59958 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +628,7 @@
 		};
 		6352A9F725B4FDD600C59958 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD294E9AC9B8D9963A577313 /* Pods-UlalaCodeChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +647,7 @@
 		};
 		6352A9F825B4FDD600C59958 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC8963A25A3C8F28F231406E /* Pods-UlalaCodeChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +666,7 @@
 		};
 		6352A9FA25B4FDD600C59958 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A37CB84D75B26122E12765AE /* Pods-UlalaCodeChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +689,7 @@
 		};
 		6352A9FB25B4FDD600C59958 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4535A9779FE34032A892EA1 /* Pods-UlalaCodeChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +712,7 @@
 		};
 		6352A9FD25B4FDD600C59958 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10BE8D657675372FA493200D /* Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +733,7 @@
 		};
 		6352A9FE25B4FDD600C59958 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D5692BF06A7527966A08B0 /* Pods-UlalaCodeChallenge-UlalaCodeChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
