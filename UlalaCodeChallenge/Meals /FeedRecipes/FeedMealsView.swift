@@ -32,8 +32,9 @@ extension FeedMealsView: FeedMealsViewProtocol {
     // TODO: implement view output methods
     
     func configViews() {
+        self.title = "meals".localized
         searchBar.searchBarStyle = UISearchBar.Style.prominent
-        searchBar.placeholder = " Search meals..."
+        searchBar.placeholder = "searchMeals".localized
         searchBar.sizeToFit()
         searchBar.isTranslucent = false
         searchBar.backgroundImage = UIImage()
@@ -64,7 +65,7 @@ extension FeedMealsView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let meal = meals?.meals?[indexPath.row] else {
             let cell = UITableViewCell()
-            cell.textLabel?.text = "noinfo".localized
+            cell.textLabel?.text = "noInfo".localized
             cell.textLabel?.textAlignment = .center
             return cell
         }
@@ -76,12 +77,21 @@ extension FeedMealsView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return UITableViewCell()
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let meal = meals?.meals?[indexPath.row] else {
+            return
+        }
+        presenter?.showDetailFor(meal: meal)
+    }
 }
 
 extension FeedMealsView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 99
     }
+    
+    
 }
 
 extension FeedMealsView: UISearchBarDelegate {

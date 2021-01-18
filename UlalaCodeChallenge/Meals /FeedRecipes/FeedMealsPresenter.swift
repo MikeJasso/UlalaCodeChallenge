@@ -26,6 +26,11 @@ extension FeedMealsPresenter: FeedMealsPresenterProtocol {
     func getMeals(by: String) {
         interactor?.searchMeals(by: by)
     }
+    
+    func showDetailFor(meal: Meal) {
+        router?.presentDetailViewFor(meal: meal)
+        
+    }
 }
 
 extension FeedMealsPresenter: FeedMealsInteractorOutputProtocol {

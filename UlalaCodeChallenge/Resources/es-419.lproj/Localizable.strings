@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  UlalaCodeChallenge
+
+  Created by MiguelJasso on 17/01/21.
+  Copyright © 2021 MikeJasso. All rights reserved.
+*/
+
+"noInfo" = "No hay información para mostrar";
+"meals" = "Recetas para amar";
+"searchMeals" = "Buscar recetas...";

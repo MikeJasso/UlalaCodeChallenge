@@ -21,6 +21,7 @@ protocol FeedMealsViewProtocol: class {
 protocol FeedMealsRouterProtocol: class {
     // PRESENTER -> Router
     static func createFeedMealsModule() -> UIViewController
+    func presentDetailViewFor(meal: Meal)
 }
 
 protocol FeedMealsPresenterProtocol: class {
@@ -31,6 +32,7 @@ protocol FeedMealsPresenterProtocol: class {
     
     func viewDidLoad()
     func getMeals(by: String)
+    func showDetailFor(meal: Meal)
 }
 
 protocol FeedMealsInteractorOutputProtocol: class {

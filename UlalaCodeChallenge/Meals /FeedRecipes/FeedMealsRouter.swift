@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class FeedMealsRouter: FeedMealsRouterProtocol {
-
+        
     class func createFeedMealsModule() -> UIViewController {
         let navController = mainStoryboard.instantiateViewController(withIdentifier: "navFeed")
         if let view = navController.children.first as? FeedMealsView {
@@ -33,4 +33,9 @@ class FeedMealsRouter: FeedMealsRouterProtocol {
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
     
+    func presentDetailViewFor(meal: Meal) {
+        let detailView = MealDetailRouter.createMealDetailModule(meal: meal)
+        let topView = UIApplication.getTopViewController()
+        topView?.show(detailView, sender: self)
+    }
 }
