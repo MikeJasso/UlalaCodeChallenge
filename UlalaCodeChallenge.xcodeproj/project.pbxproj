@@ -14,6 +14,8 @@
 		6346DC7725B510B700996CA6 /* MealDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346DC7025B510B700996CA6 /* MealDetailInteractor.swift */; };
 		6346DC7825B510B700996CA6 /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346DC7125B510B700996CA6 /* MealDetailView.swift */; };
 		6346DC7B25B5153D00996CA6 /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346DC7A25B5153D00996CA6 /* UIApplication+Ext.swift */; };
+		6346DC8125B520F000996CA6 /* MealLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346DC7F25B520F000996CA6 /* MealLabelTableViewCell.swift */; };
+		6346DC8225B520F000996CA6 /* MealLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6346DC8025B520F000996CA6 /* MealLabelTableViewCell.xib */; };
 		6352A9D025B4FDD200C59958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352A9CF25B4FDD200C59958 /* AppDelegate.swift */; };
 		6352A9D225B4FDD200C59958 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352A9D125B4FDD200C59958 /* SceneDelegate.swift */; };
 		6352A9D725B4FDD200C59958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6352A9D525B4FDD200C59958 /* Main.storyboard */; };
@@ -66,6 +68,8 @@
 		6346DC7025B510B700996CA6 /* MealDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailInteractor.swift; sourceTree = "<group>"; };
 		6346DC7125B510B700996CA6 /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
 		6346DC7A25B5153D00996CA6 /* UIApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
+		6346DC7F25B520F000996CA6 /* MealLabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealLabelTableViewCell.swift; sourceTree = "<group>"; };
+		6346DC8025B520F000996CA6 /* MealLabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealLabelTableViewCell.xib; sourceTree = "<group>"; };
 		6352A9CC25B4FDD200C59958 /* UlalaCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UlalaCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6352A9CF25B4FDD200C59958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6352A9D125B4FDD200C59958 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 		6346DC6B25B510A200996CA6 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				6346DC7E25B520DD00996CA6 /* Cells */,
 				6346DC6C25B510B700996CA6 /* MealDetailPresenter.swift */,
 				6346DC6E25B510B700996CA6 /* MealDetailRouter.swift */,
 				6346DC6F25B510B700996CA6 /* MealDetailProtocols.swift */,
@@ -186,6 +191,15 @@
 				6346DC7125B510B700996CA6 /* MealDetailView.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		6346DC7E25B520DD00996CA6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6346DC7F25B520F000996CA6 /* MealLabelTableViewCell.swift */,
+				6346DC8025B520F000996CA6 /* MealLabelTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		6352A9C325B4FDD200C59958 = {
@@ -404,6 +418,7 @@
 				6352A9DC25B4FDD600C59958 /* LaunchScreen.storyboard in Resources */,
 				6352A9D925B4FDD600C59958 /* Assets.xcassets in Resources */,
 				6352A9D725B4FDD200C59958 /* Main.storyboard in Resources */,
+				6346DC8225B520F000996CA6 /* MealLabelTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +555,7 @@
 				6346DC7825B510B700996CA6 /* MealDetailView.swift in Sources */,
 				6346DC7525B510B700996CA6 /* MealDetailRouter.swift in Sources */,
 				6346DC7325B510B700996CA6 /* MealDetailPresenter.swift in Sources */,
+				6346DC8125B520F000996CA6 /* MealLabelTableViewCell.swift in Sources */,
 				6352AA0925B4FE2200C59958 /* FeedMealsRouter.swift in Sources */,
 				6352A9D025B4FDD200C59958 /* AppDelegate.swift in Sources */,
 				6352AA1E25B5041700C59958 /* String+Ext.swift in Sources */,
