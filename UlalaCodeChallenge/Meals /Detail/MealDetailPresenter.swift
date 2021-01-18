@@ -26,6 +26,13 @@ extension MealDetailPresenter: MealDetailPresenterProtocol {
         }
         view?.update(meal: meal)
     }
+    
+    func ingredients() -> [String?] {
+        guard let meal = meal else {
+            return []
+        }
+        return interactor?.ingredients(meal: meal) ?? []
+    }
 }
 
 extension MealDetailPresenter: MealDetailInteractorOutputProtocol {

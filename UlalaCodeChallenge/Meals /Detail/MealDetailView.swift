@@ -14,6 +14,7 @@ class MealDetailView: UIViewController {
     // MARK: Properties
     var presenter: MealDetailPresenterProtocol?
     var meal: Meal!
+    var ingredients: [String?] = []
     
     @IBOutlet weak var detailTableView: UITableView!
 
@@ -28,6 +29,7 @@ class MealDetailView: UIViewController {
 extension MealDetailView: MealDetailViewProtocol {
     // TODO: implement view output methods
     func update(meal: Meal) {
+        ingredients = presenter?.ingredients() ?? []
         self.meal = meal
         self.title = meal.strMeal
         DispatchQueue.main.async {
@@ -42,14 +44,14 @@ extension MealDetailView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let meal = meal else {
+        guard meal != nil else {
             return 1
         }
         switch section {
         case 0:
             return 1
         case 1:
-            return 0
+            return ingredients.count
         default:
            return 0
         }
@@ -69,7 +71,11 @@ extension MealDetailView: UITableViewDataSource {
             return cell
         case 1:
             let cell: MealLabelTableViewCell = detailTableView.dequeueReusableCell(for: indexPath)
-            cell.txt = meal.strInstructions ?? ""
+            if ingredients.isEmpty {
+                cell.txt = ""
+            }else {
+                cell.txt = ingredients [indexPath.row]
+            }
             return cell
         default: return UITableViewCell()
         }
@@ -78,10 +84,11 @@ extension MealDetailView: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
-            return "Instructions"
+            return "instructions".localized
         }
-        return "Ingredientes"
+        return "ingredients".localized
     }
+
 }
 
 extension MealDetailView: UITableViewDelegate {

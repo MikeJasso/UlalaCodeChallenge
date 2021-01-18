@@ -29,6 +29,7 @@ protocol MealDetailPresenterProtocol: class {
     var meal: Meal? { get set }
     
     func viewDidLoad()
+    func ingredients() -> [String?]
 
 }
 
@@ -39,4 +40,6 @@ protocol MealDetailInteractorOutputProtocol: class {
 protocol MealDetailInteractorInputProtocol: class {
     // PRESENTER -> INTERACTOR
     var presenter: MealDetailInteractorOutputProtocol? { get set }
+    
+    func ingredients(meal: Meal) -> [String?]
 }
