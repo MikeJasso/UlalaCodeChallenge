@@ -13,6 +13,7 @@ protocol FeedReceipesViewProtocol: class {
     // PRESENTER -> VIEW
     var presenter: FeedReceipesPresenterProtocol? { get set }
     
+    func configViews()
     func show(meals: Meals)
     func showErrorAlert(error: String)
 }

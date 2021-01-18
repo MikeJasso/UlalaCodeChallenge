@@ -19,7 +19,9 @@ class FeedReceipesPresenter  {
 
 extension FeedReceipesPresenter: FeedReceipesPresenterProtocol {
     // TODO: implement presenter methods
-    func viewDidLoad() { }
+    func viewDidLoad() {
+        view?.configViews()
+    }
     
     func getMeals(by: String) {
         interactor?.searchMeals(by: by)
