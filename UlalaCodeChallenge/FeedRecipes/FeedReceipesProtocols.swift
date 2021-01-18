@@ -9,39 +9,39 @@
 import Foundation
 import UIKit
 
-protocol FeedReceipesViewProtocol: class {
+protocol FeedMealsViewProtocol: class {
     // PRESENTER -> VIEW
-    var presenter: FeedReceipesPresenterProtocol? { get set }
+    var presenter: FeedMealsPresenterProtocol? { get set }
     
     func configViews()
     func show(meals: Meals)
     func showErrorAlert(error: String)
 }
 
-protocol FeedReceipesRouterProtocol: class {
+protocol FeedMealsRouterProtocol: class {
     // PRESENTER -> Router
-    static func createFeedReceipesModule() -> UIViewController
+    static func createFeedMealsModule() -> UIViewController
 }
 
-protocol FeedReceipesPresenterProtocol: class {
+protocol FeedMealsPresenterProtocol: class {
     // VIEW -> PRESENTER
-    var view: FeedReceipesViewProtocol? { get set }
-    var interactor: FeedReceipesInteractorInputProtocol? { get set }
-    var router: FeedReceipesRouterProtocol? { get set }
+    var view: FeedMealsViewProtocol? { get set }
+    var interactor: FeedMealsInteractorInputProtocol? { get set }
+    var router: FeedMealsRouterProtocol? { get set }
     
     func viewDidLoad()
     func getMeals(by: String)
 }
 
-protocol FeedReceipesInteractorOutputProtocol: class {
+protocol FeedMealsInteractorOutputProtocol: class {
 // INTERACTOR -> PRESENTER
     func show(meals: Meals)
     func showErrorAlert(error: String)
 }
 
-protocol FeedReceipesInteractorInputProtocol: class {
+protocol FeedMealsInteractorInputProtocol: class {
     // PRESENTER -> INTERACTOR
-    var presenter: FeedReceipesInteractorOutputProtocol? { get set }
+    var presenter: FeedMealsInteractorOutputProtocol? { get set }
     
     func searchMeals(by: String)
 }

@@ -17,7 +17,7 @@ class FeedMealsPresenter  {
     
 }
 
-extension FeedMealsPresenter: FeedReceipesPresenterProtocol {
+extension FeedMealsPresenter: FeedMealsPresenterProtocol {
     // TODO: implement presenter methods
     func viewDidLoad() {
         view?.configViews()
@@ -28,7 +28,7 @@ extension FeedMealsPresenter: FeedReceipesPresenterProtocol {
     }
 }
 
-extension FeedMealsPresenter: FeedReceipesInteractorOutputProtocol {
+extension FeedMealsPresenter: FeedMealsInteractorOutputProtocol {
     func show(meals: Meals) {
         view?.show(meals: meals)
     }

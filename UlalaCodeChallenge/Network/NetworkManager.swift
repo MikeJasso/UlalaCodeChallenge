@@ -19,7 +19,8 @@ enum ServiceResultQuery {
 typealias ServiceResult = (_ result : ServiceResultQuery) -> ()
 
 enum networkQuery {
-    case getReceipes(by: String?)
+    case getMeals(by: String?)
+    case getMeal(id: String)
 }
 
 class  endPoints {
@@ -28,8 +29,10 @@ class  endPoints {
         let baseURL = "https://www.themealdb.com/api/json/v1/1/"
 
         switch by {
-        case .getReceipes (let text):
+        case .getMeals(let text):
             return baseURL + "search.php?s=\(text ?? "a")"
+        case .getMeal (let id):
+            return baseURL + "/lookup.php?i=\(id)"
         }
     }
     

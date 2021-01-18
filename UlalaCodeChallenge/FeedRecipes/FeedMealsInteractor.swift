@@ -8,13 +8,13 @@
 
 import Foundation
 
-class FeedReceipesInteractor: FeedReceipesInteractorInputProtocol {
+class FeedMealsInteractor: FeedMealsInteractorInputProtocol {
 
     // MARK: Properties
-    weak var presenter: FeedReceipesInteractorOutputProtocol?
+    weak var presenter: FeedMealsInteractorOutputProtocol?
     
     func searchMeals(by: String) {
-        NetworkManager.shared.fetchRequest(.getReceipes(by: by)) { (result) in
+        NetworkManager.shared.fetchRequest(.getMeals(by: by)) { (result) in
             let decoder = JSONDecoder()
             switch result {
             case .success(let data):

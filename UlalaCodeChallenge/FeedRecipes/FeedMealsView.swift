@@ -33,7 +33,7 @@ extension FeedMealsView: FeedMealsViewProtocol {
     
     func configViews() {
         searchBar.searchBarStyle = UISearchBar.Style.prominent
-        searchBar.placeholder = " Search receipe..."
+        searchBar.placeholder = " Search meals..."
         searchBar.sizeToFit()
         searchBar.isTranslucent = false
         searchBar.backgroundImage = UIImage()

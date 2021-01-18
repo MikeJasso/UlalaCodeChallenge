@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 
-class FeedReceipesRouter: FeedReceipesRouterProtocol {
+class FeedMealsRouter: FeedMealsRouterProtocol {
 
-    class func createFeedReceipesModule() -> UIViewController {
+    class func createFeedMealsModule() -> UIViewController {
         let navController = mainStoryboard.instantiateViewController(withIdentifier: "navFeed")
-        if let view = navController.children.first as? FeedReceipesView {
-            let presenter: FeedReceipesPresenterProtocol & FeedReceipesInteractorOutputProtocol = FeedReceipesPresenter()
-            let interactor: FeedReceipesInteractorInputProtocol = FeedReceipesInteractor()
-            let router: FeedReceipesRouterProtocol = FeedReceipesRouter()
+        if let view = navController.children.first as? FeedMealsView {
+            let presenter: FeedMealsPresenterProtocol & FeedMealsInteractorOutputProtocol = FeedMealsPresenter()
+            let interactor: FeedMealsInteractorInputProtocol = FeedMealsInteractor()
+            let router: FeedMealsRouterProtocol = FeedMealsRouter()
             
             view.presenter = presenter
             presenter.view = view
